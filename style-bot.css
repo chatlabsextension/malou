@@ -147,21 +147,14 @@
 }
 
 .s9t60i1 {
-  background-image: linear-gradient(to bottom, #113626, #000000);
-} 
-
-._1vj16245 {
-  background-image: #000000;
+  background-image: linear-gradient(
+    to bottom,
+    #113626 0%, /* Starting color, fully opaque */
+    rgba(255, 255, 255, 0) 25% /* Fades to transparent white by 25% of the height */
+  );
 }
 
-.jsli365 {
-  color: #ffffff;
-}
-
-.vfrc-assistant-info--title dio4eo4 {
-  color: #ffffff;
-}
-
-.vfrc-assistant-info--description dio4eo5 {
-  color: #ffffff;
+.vfrc-chat s9t60i0 {
+  position: relative;
+  z-index: 9999;
 }
