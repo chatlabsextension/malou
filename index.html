@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voiceflow Chat</title>
+</head>
+<body style="
+  background: linear-gradient(135deg, #000000, #1b1818);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+">
+
 <style>
   #voiceflow-chat {
     display: block !important;
@@ -9,16 +25,15 @@
     BrowserDataExtension,
     WaitingAnimationExtension,
     DoneAnimationExtension,
-    OpenAIResponseExtension,
     DisableInputExtension,
-  } from "https://chatlabsextension.github.io/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW/extensions.js";
+  } from "https://chatlabsextension.github.io/malou/extensions.js";
 
   (function (d, t) {
     var v = d.createElement(t),
       s = d.getElementsByTagName(t)[0];
     v.onload = function () {
       window.voiceflow.chat.load({
-        verify: { projectID: "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" },
+        verify: { projectID: "6821b58b97a9ce1e0eaa8768" },
         url: "https://general-runtime.voiceflow.com",
         versionID: "production",
         launch: {
@@ -33,13 +48,12 @@
         },
         assistant: {
           stylesheet:
-            "https://chatlabsextension.github.io/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW/style-bot.css",
+            "https://chatlabsextension.github.io/malou/style-bot.css",
           persistence: "memory",
           extensions: [
             BrowserDataExtension,
             WaitingAnimationExtension,
             DoneAnimationExtension,
-            OpenAIResponseExtension,
             DisableInputExtension,
           ],
         },
@@ -62,8 +76,11 @@
         }
       });
     };
-    v.src = "https://chatlabsextension.github.io/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW/bundle.mjs";
+    v.src = "https://chatlabsextension.github.io/malou/bundle.mjs";
     v.type = "text/javascript";
     s.parentNode.insertBefore(v, s);
   })(document, "script");
 </script>
+
+</body>
+</html>
