@@ -150,7 +150,7 @@
   background-image: linear-gradient(
     to bottom,
     #113626 0%, /* Starting color, fully opaque */
-    rgba(255, 255, 255, 0) 25% /* Fades to transparent white by 25% of the height */
+    rgba(255, 255, 255, 0) 100% /* Fades to transparent white by 25% of the height */
   );
 }
 
